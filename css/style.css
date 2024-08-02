@@ -1,0 +1,167 @@
+.brand-logo {
+    position: absolute;
+    top: 1rem;
+    z-index: 1;
+    left: 1rem;
+    width: 180px;
+    ;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+
+    color: #6e6b7b;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #5e5873;
+}
+
+.font-weight-bold {
+    font-weight: 500 !important;
+}
+
+h2.card-title {
+    font-size: 1.7rem;
+    font-weight: 300 !important;
+    color: #084DA6;
+}
+
+.btn.btn-first {
+    color: #fff;
+    border: 0;
+    background-color: #084DA6;
+}
+
+.btn.btn-second {
+    color: #fff;
+    border: 0;
+    background-color: #F29D35;
+}
+
+.inputborder {
+    border: 2px solid #084DA6;
+}
+
+.bg-gray {
+    background: #f8f8f8;
+}
+
+.tile1 {
+    background: hsla(217, 100%, 50%, 1);
+
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1);
+}
+
+.tile2 {
+    background: hsla(136, 82%, 72%, 1);
+
+    background: linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(136, 82%, 72%, 1) 0%, hsla(205, 84%, 36%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#7EF29D", endColorstr="#0F68A9", GradientType=1);
+}
+
+.tile3 {
+    background: hsla(232, 73%, 65%, 1);
+
+    background: linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(232, 73%, 65%, 1) 0%, hsla(279, 33%, 48%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#6274E7", endColorstr="#8752A3", GradientType=1);
+}
+
+.tile4 {
+    background: hsla(148, 100%, 47%, 1);
+
+    background: linear-gradient(90deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(148, 100%, 47%, 1) 0%, hsla(211, 90%, 47%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#00EE6E", endColorstr="#0C75E6", GradientType=1);
+}
+
+.feature img {
+    padding: 25px 0 0;
+    width: 70px;
+}
+
+.tile1 h2,
+.tile2 h2,
+.tile3 h2,
+.tile4 h2 {
+    color: fff;
+}
+
+.tile1,
+.tile2,
+.tile3,
+.tile4 {
+    color: fff;
+    border-radius: 25px;
+}
+
+.tile1 p,
+.tile2 p,
+.tile3 p,
+.tile4 p {
+    padding: 15px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.iconf {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66px;
+    height: 66px;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Ensure it's behind other content */
+}

@@ -112,8 +112,17 @@ h2.card-title {
 }
 
 .feature img {
-    padding: 25px 0 0;
+    margin-top: 25px;
+    padding: 7px;
+    width: 65px;
+    transition: width 0.3s ease-in-out;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tile:hover .feature img {
     width: 70px;
+    /* Increase the width on hover */
 }
 
 .tile1 h2,
@@ -140,6 +149,7 @@ h2.card-title {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     font-size: 14px;
+    transition: all 0.5 ease-in-out;
 }
 
 
@@ -164,4 +174,26 @@ a {
     left: 0;
     z-index: -1;
     /* Ensure it's behind other content */
+}
+
+.tile {
+    transition: all 0.5 ease-in-out;
+    max-height: 253px;
+    min-height: 253px;
+}
+
+.tile1 p,
+.tile2 p,
+.tile3 p,
+.tile4 p {
+    padding: 15px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+
+.tile:hover p {
+    background: rgba(255, 255, 255, 0.4);
 }

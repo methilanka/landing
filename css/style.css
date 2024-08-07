@@ -11,8 +11,12 @@ body {
     margin: 0;
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
-
+    height: 100%;
     color: #6e6b7b;
+}
+
+html {
+    height: 100%;
 }
 
 .h1,
@@ -63,46 +67,13 @@ h2.card-title {
     background: #f8f8f8;
 }
 
-.tile1 {
-    background: hsla(350, 93%, 61%, 1);
+.tile1 {}
 
-    background: linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+.tile2 {}
 
-    background: -moz-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
+.tile3 {}
 
-    background: -webkit-linear-gradient(90deg, hsla(350, 93%, 61%, 1) 0%, hsla(8, 98%, 59%, 1) 100%);
-}
-
-.tile2 {
-    background: hsla(206, 91%, 66%, 1);
-
-    background: linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(206, 91%, 66%, 1) 0%, hsla(190, 90%, 51%, 1) 100%);
-
-}
-
-.tile3 {
-    background: hsla(213, 77%, 14%, 1);
-
-    background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
-}
-
-.tile4 {
-    background: hsla(236, 100%, 8%, 1);
-
-    background: linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(236, 100%, 8%, 1) 0%, hsla(211, 100%, 28%, 1) 100%);
-}
+.tile4 {}
 
 .feature img {
     margin-top: 25px;
@@ -113,25 +84,8 @@ h2.card-title {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.tile:hover .feature img {
-    width: 70px;
-    /* Increase the width on hover */
-}
 
-.tile1 h2,
-.tile2 h2,
-.tile3 h2,
-.tile4 h2 {
-    color: fff;
-}
 
-.tile1,
-.tile2,
-.tile3,
-.tile4 {
-    color: fff;
-    border-radius: 0px;
-}
 
 .tile1 p,
 .tile2 p,
@@ -141,8 +95,9 @@ h2.card-title {
     display: block;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    font-size: 14px;
-    transition: all 0.5 ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
+    color: #A0A0A0;
 }
 
 
@@ -171,22 +126,74 @@ a {
 
 .tile {
     transition: all 0.5 ease-in-out;
-    max-height: 253px;
-    min-height: 253px;
-}
-
-.tile1 p,
-.tile2 p,
-.tile3 p,
-.tile4 p {
-    padding: 15px;
-    display: block;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    font-size: 14px;
+    max-height: auto;
+    min-height: auto;
+    border: 0;
+    border-radius: 11px;
 }
 
 
-.tile:hover p {
-    background: rgba(255, 255, 255, 0.4);
+.tile h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.tile h6 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logobg {
+    background: red;
+    padding: 7px;
+    border-radius: 50%;
+    width: 66px;
+    margin-top: 15px;
+}
+
+.top1 {
+    width: 29px;
+    right: 0;
+    position: absolute;
+}
+
+.tile .row {
+    z-index: 1;
+}
+
+.top2 {
+    width: 205px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+.btn {
+    border-radius: 15px;
+}
+
+
+
+
+
+@media (min-width: 991.98px) {
+    .pagecontent {
+        height: calc(100vh - 52.25px);
+    }
+
+    footer {
+        flex-shrink: 0;
+    }
+
+    .appbody {
+        flex: 1 0 auto;
+        overflow-y: auto;
+    }
+
+    .tile {
+        max-height: 200px;
+        min-height: 200px;
+    }
 }
